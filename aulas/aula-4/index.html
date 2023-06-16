@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repeat e minmax</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: minmax(200,40%) ;
+            grid-template-rows: 200px 200px 200px;
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+            grid-auto-rows: 500px;
+
+
+
+        }
+
+        .wrapper div {
+            background-color: red;
+        }
+
+        .wrapper div:nth-child(even) {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        repeat e min max
+    </h1>
+
+    <!-- css grid
+    
+    vamos conhecer a função repeat( )
+    uma espécie de função que é possível repetir valores que se queira
+    exemplo: dentro de grid-template-column, temos 3 colunas, cada uma delas 200px, as 3 colunas tem as mesmas configuração, usando a função repeat a gente iria escrever de uma maneira simplificada
+           coluna   largura
+    repeat(3,      200px) 
+
+    repeat (3, 200px) 10%
+
+
+    - minmax(200, 40%)
+    a largura minima e máxima, o primeiro valor é o tamanho minimo e o segundo valor o tamanho máximo
+     -->
+
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>
