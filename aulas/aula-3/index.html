@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua primeira Grid</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aula 3</title>
+  <style>
+    .wrapper div {
+      display: grid;
+      grid-template-columns: 200px 200px;
+      background-color: royalblue;
+      padding: 1rem;
+
+      
+    }
+
+    .wrapper div:nth-child(even) {
+      background-color: skyblue;
+    }
+  </style>
 </head>
 <body>
-    <!--Sua primeira Grid-->
-    <div class="wrapper">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-    </div>
+  <h1>aula 3</h1>
+  <div class="wrapper">
 
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+
+  </div>
 </body>
 </html>
