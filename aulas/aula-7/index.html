@@ -9,16 +9,21 @@
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 200px;
 
+            
+
 
 
         }
 
         .wrapper div {
             background-color: red;
+            border: 1px solid black;
         }
 
-        .wrapper div:nth-child(even) {
+        .wrapper div:nth-child(1) {
             background-color: pink;
+            grid-column: 1 / -1;
+            
         }
     </style>
 </head>
@@ -37,8 +42,22 @@
 
     Ocupando espaços com css
 
+    no exercicio, vamos criar uma regra que vai afetar o elemento numero 1
+
+    com a propriedade -> grid-column-start
+- grid-column-star : é possivel indicar qual coluna esse elemento começara o seu posicionamento dentro da grid
+
+grid-column-end: conseguimos especificar até que ponto esse elemento ocupará.
+
+para facilitar, vamos usar o grid-column. um abreviador daquelas duas propriedades
+exemplo: 
+colocamos o primeiro valor, adicionamos uma barra e depois colocamos o ultimo valor
+
+grid-column: 1 / 3
 
 
+tabmém é possivel pra grid column end, especificar o valor reservado, que é o -1. ele vai ocupar onde se indicou para começar até o final da grid. tabmém é possivel usar a palavra span, em que se especifica quantos espaço de coluna serão ocupadas
+  grid-column: 1 / span 2
   -->
 </body>
 </html>
